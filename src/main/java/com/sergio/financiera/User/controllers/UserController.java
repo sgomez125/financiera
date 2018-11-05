@@ -23,7 +23,7 @@ public class UserController {
 	@RequestMapping(method = RequestMethod.GET)
 	@ResponseBody
 	public List<User> findAll() {
-		return userService.listUsers();
+		return userService.listUsers(); 
 	}
 	
 	@RequestMapping(value="/add", method = RequestMethod.POST)
